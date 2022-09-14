@@ -2,6 +2,8 @@ const Koa = require('koa')
 const cors = require('koa-cors')
 const bodyParser = require('koa-bodyparser')
 
+const router = require('./router')
+
 const app = new Koa()
 
 // 开启cors跨域
@@ -15,7 +17,12 @@ app.use(
 
 // 上下文解析
 app.use(bodyParser())
+// 路由解析
+app.use(router.routes())
+app.on('error', (err,) => {
+  console.log('发生错误', err.message)
+})
 
 app.listen(3000)
 
-console.warn('koa 应用启动成功')
+console.log('koa 应用启动成功')
