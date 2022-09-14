@@ -3,6 +3,8 @@ const cors = require('koa-cors')
 const bodyParser = require('koa-bodyparser')
 
 const router = require('./router')
+// model的定义注册到sequelize实例
+require('./model/index')
 
 const app = new Koa()
 
