@@ -13,8 +13,9 @@
   "author": "fe92star <1737765939@qq.com> (https://github.com/fe92star/)",
   "license": "MIT",
   "devDependencies": {
-    "@fe92star/eslint-config-basic": "^0.0.6",
-    "@fe92star/eslint-config-prettier": "^0.0.6",
+    "@fe92star/eslint-config-basic": "^0.0.7",
+    "@fe92star/eslint-config-prettier": "^0.0.7",
+    "@fe92star/eslint-config-vue": "^0.0.7",
     "eslint": "^8.23.1",
     "eslint-define-config": "^1.7.0"
   }
